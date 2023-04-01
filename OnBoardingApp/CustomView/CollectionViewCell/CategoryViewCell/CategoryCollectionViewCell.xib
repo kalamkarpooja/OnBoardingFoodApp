@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="OnBoardingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThU-eK-fBX" customClass="CardView" customModule="OnBoardingApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="131" height="51"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noodles" translatesAutoresizingMaskIntoConstraints="NO" id="zR1-mk-EsM">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="51"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zR1-mk-EsM" secondAttribute="trailing" id="8h6-Uo-D05"/>
+                            <constraint firstAttribute="bottom" secondItem="zR1-mk-EsM" secondAttribute="bottom" id="gN7-T2-UEn"/>
+                            <constraint firstItem="zR1-mk-EsM" firstAttribute="top" secondItem="ThU-eK-fBX" secondAttribute="top" id="jOj-5H-Cah"/>
+                            <constraint firstItem="zR1-mk-EsM" firstAttribute="leading" secondItem="ThU-eK-fBX" secondAttribute="leading" id="tRE-zk-byp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ThU-eK-fBX" secondAttribute="trailing" id="T3k-kB-20h"/>
+                <constraint firstItem="ThU-eK-fBX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bYx-4p-p5C"/>
+                <constraint firstAttribute="bottom" secondItem="ThU-eK-fBX" secondAttribute="bottom" id="qt3-fb-T9I"/>
+                <constraint firstItem="ThU-eK-fBX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xAa-Ut-yCi"/>
+            </constraints>
+            <size key="customSize" width="131" height="51"/>
+            <connections>
+                <outlet property="categoryImage" destination="zR1-mk-EsM" id="KDI-7O-dXZ"/>
+            </connections>
+            <point key="canvasLocation" x="16.666666666666668" y="58.59375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="noodles" width="300" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
